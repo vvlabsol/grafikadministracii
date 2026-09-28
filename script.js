@@ -44,20 +44,55 @@ function updateDateText() {
 
 
 // =========================
-// МАКСИМАЛЬНОЕ КОЛИЧЕСТВО
+// ВМЕСТИМОСТЬ ИНТЕРВАЛОВ
 // =========================
 
-function getMaxCapacity(button) {
+function getOriginalCapacity(button) {
 
-    const block = button.closest(".time-block");
+    const interval = button.dataset.interval;
 
-    const capacity = block.querySelector(".capacity");
 
-    const text = capacity.textContent;
+    if (interval === "06:00-08:00") {
+        return 2;
+    }
 
-    const max = parseInt(text.split("/")[1]);
 
-    return max || 3;
+    if (interval === "08:00-11:00") {
+        return 3;
+    }
+
+
+    if (interval === "11:00-13:00") {
+        return 4;
+    }
+
+
+    if (interval === "13:00-16:00") {
+        return 4;
+    }
+
+
+    if (interval === "16:00-19:00") {
+        return 4;
+    }
+
+
+    if (interval === "19:00-21:00") {
+        return 5;
+    }
+
+
+    if (interval === "21:00-00:00") {
+        return 3;
+    }
+
+
+    if (interval === "00:00-02:00") {
+        return 3;
+    }
+
+
+    return 3;
 }
 
 
@@ -154,24 +189,6 @@ function loadSchedule() {
     updateCounter();
 
     updateDateText();
-}
-
-
-// =========================
-// ИСХОДНАЯ ВМЕСТИМОСТЬ
-// =========================
-
-function getOriginalCapacity(button) {
-
-    const interval = button.dataset.interval;
-
-
-    if (interval === "06:00-08:00") {
-        return 2;
-    }
-
-
-    return 3;
 }
 
 
@@ -305,7 +322,6 @@ resetButton.addEventListener("click", function () {
 
 
     localStorage.removeItem(getStorageKey());
-
 
     selectedIntervals = {};
 
