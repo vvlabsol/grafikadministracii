@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>График работы администрации</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <div class="logo-icon"><img src="https://cdn.payga.me/icon_large/2024/09/20/MRP_big.png" alt="Матрешка RP"></div>
+
+        <div class="logo-text">
+            <strong>Матрешка RP</strong>
+            <span>График администрации</span>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <span>Сервер #18</span>
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <!-- Верхняя панель -->
+
+    <section class="top-panel">
+
+        <div class="page-title">
+            <h1>График работы администрации</h1>
+
+            <p>
+                Выберите дату и настройте рабочие интервалы.
+            </p>
+        </div>
+
+
+        <div class="date-selector">
+
+            <label for="schedule-date">
+                Дата графика
+            </label>
+
+            <input
+                type="date"
+                id="schedule-date"
+                value="2026-09-28"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- Выбор администратора -->
+
+    <section class="admin-panel">
+
+        <div class="section-title">
+
+            <div>
+                <h2>Администратор</h2>
+
+                <p>
+                    Выберите администратора, для которого устанавливается график.
+                </p>
+            </div>
+
+        </div>
+
+
+        <select id="administrator">
+
+            <option value="">
+                Выберите администратора
+            </option>
+
+            <option value="Jonathan_Moriarty">
+                Jonathan_Moriarty
+            </option>
+
+            <option value="Brom_Kardinal">
+                Brom_Kardinal
+            </option>
+
+            <option value="Ksusha_Emerald">
+                Ksusha_Emerald
+            </option>
+
+            <option value="Nekros_Skywalker">
+                Nekros_Skywalker
+            </option>
+
+            <option value="Adriano_Squella">
+                Adriano_Squella
+            </option>
+
+            <option value="Roninchik_Mirniy">
+                Roninchik_Mirniy
+            </option>
+
+            <option value="Lui_Moriarty">
+                Lui_Moriarty
+            </option>
+
+            <option value="Weshiro_Weshirov">
+                Weshiro_Weshirov
+            </option>
+
+            <option value="Fenix_Blitz">
+                Fenix_Blitz
+            </option>
+
+            <option value="Fernando_Dangerous">
+                Fernando_Dangerous
+            </option>
+
+            <option value="Grigoriy_Souza">
+                Grigoriy_Souza
+            </option>
+
+            <option value="Vlad_Kardinal">
+                Vlad_Kardinal
+            </option>
+
+            <option value="Dmitriy_Dimonov">
+                Dmitriy_Dimonov
+            </option>
+
+            <option value="Yamiless_Watson">
+                Yamiless_Watson
+            </option>
+
+            <option value="Vanya_Archer">
+                Vanya_Archer
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- График -->
+
+    <section class="schedule-panel">
+
+        <div class="schedule-header">
+
+            <div>
+                <h2>Рабочие интервалы</h2>
+
+                <p>
+                    28 сентября 2026 года
+                </p>
+            </div>
+
+            <div class="selected-counter">
+                Выбрано: <strong>0</strong>
+            </div>
+
+        </div>
+
+
+        <div class="schedule-list">
+
+
+            <!-- 06:00 - 08:00 -->
+
+            <div class="time-block">
+
+                <div class="time">
+
+                    <strong>06:00</strong>
+
+                    <span>—</span>
+
+                    <strong>08:00</strong>
+
+                </div>
+
+
+                <div class="interval">
+
+                    <div class="interval-header">
+
+                        <span class="interval-name">
+                            Утренний интервал
+                        </span>
+
+                        <span class="capacity">
+                            0 / 2
+                        </span>
+
+                    </div>
+
+
+                    <div class="admins">
+
+                        <span class="free">
+                            Свободно 2 места
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="select-button"
+                    type="button"
+                    data-interval="06:00-08:00"
+                >
+                    Выбрать
+                </button>
+
+            </div>
+
+
+            <!-- 08:00 - 11:00 -->
+
+            <div class="time-block">
+
+                <div class="time">
+
+                    <strong>08:00</strong>
+
+                    <span>—</span>
+
+                    <strong>11:00</strong>
+
+                </div>
+
+
+                <div class="interval">
+
+                    <div class="interval-header">
+
+                        <span class="interval-name">
+                            Утренний интервал
+                        </span>
+
+                        <span class="capacity">
+                            0 / 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="admins">
+
+                        <span class="free">
+                            Свободно 3 места
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="select-button"
+                    type="button"
+                    data-interval="08:00-11:00"
+                >
+                    Выбрать
+                </button>
+
+            </div>
+
+
+            <!-- 11:00 - 13:00 -->
+
+            <div class="time-block">
+
+                <div class="time">
+
+                    <strong>11:00</strong>
+
+                    <span>—</span>
+
+                    <strong>13:00</strong>
+
+                </div>
+
+
+                <div class="interval">
+
+                    <div class="interval-header">
+
+                        <span class="interval-name">
+                            Дневной интервал
+                        </span>
+
+                        <span class="capacity">
+                            0 / 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="admins">
+
+                        <span class="free">
+                            Свободно 3 места
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="select-button"
+                    type="button"
+                    data-interval="11:00-13:00"
+                >
+                    Выбрать
+                </button>
+
+            </div>
+
+
+            <!-- 13:00 - 16:00 -->
+
+            <div class="time-block">
+
+                <div class="time">
+
+                    <strong>13:00</strong>
+
+                    <span>—</span>
+
+                    <strong>16:00</strong>
+
+                </div>
+
+
+                <div class="interval">
+
+                    <div class="interval-header">
+
+                        <span class="interval-name">
+                            Дневной интервал
+                        </span>
+
+                        <span class="capacity">
+                            0 / 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="admins">
+
+                        <span class="free">
+                            Свободно 3 места
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="select-button"
+                    type="button"
+                    data-interval="13:00-16:00"
+                >
+                    Выбрать
+                </button>
+
+            </div>
+
+
+            <!-- 16:00 - 19:00 -->
+
+            <div class="time-block">
+
+                <div class="time">
+
+                    <strong>16:00</strong>
+
+                    <span>—</span>
+
+                    <strong>19:00</strong>
+
+                </div>
+
+
+                <div class="interval">
+
+                    <div class="interval-header">
+
+                        <span class="interval-name">
+                            Вечерний интервал
+                        </span>
+
+                        <span class="capacity">
+                            0 / 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="admins">
+
+                        <span class="free">
+                            Свободно 3 места
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="select-button"
+                    type="button"
+                    data-interval="16:00-19:00"
+                >
+                    Выбрать
+                </button>
+
+            </div>
+
+
+            <!-- 19:00 - 21:00 -->
+
+            <div class="time-block">
+
+                <div class="time">
+
+                    <strong>19:00</strong>
+
+                    <span>—</span>
+
+                    <strong>21:00</strong>
+
+                </div>
+
+
+                <div class="interval">
+
+                    <div class="interval-header">
+
+                        <span class="interval-name">
+                            Вечерний интервал
+                        </span>
+
+                        <span class="capacity">
+                            0 / 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="admins">
+
+                        <span class="free">
+                            Свободно 3 места
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="select-button"
+                    type="button"
+                    data-interval="19:00-21:00"
+                >
+                    Выбрать
+                </button>
+
+            </div>
+
+
+            <!-- 21:00 - 00:00 -->
+
+            <div class="time-block">
+
+                <div class="time">
+
+                    <strong>21:00</strong>
+
+                    <span>—</span>
+
+                    <strong>00:00</strong>
+
+                </div>
+
+
+                <div class="interval">
+
+                    <div class="interval-header">
+
+                        <span class="interval-name">
+                            Ночной интервал
+                        </span>
+
+                        <span class="capacity">
+                            0 / 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="admins">
+
+                        <span class="free">
+                            Свободно 3 места
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="select-button"
+                    type="button"
+                    data-interval="21:00-00:00"
+                >
+                    Выбрать
+                </button>
+
+            </div>
+
+
+            <!-- 00:00 - 02:00 -->
+
+            <div class="time-block">
+
+                <div class="time">
+
+                    <strong>00:00</strong>
+
+                    <span>—</span>
+
+                    <strong>02:00</strong>
+
+                </div>
+
+
+                <div class="interval">
+
+                    <div class="interval-header">
+
+                        <span class="interval-name">
+                            Ночной интервал
+                        </span>
+
+                        <span class="capacity">
+                            0 / 3
+                        </span>
+
+                    </div>
+
+
+                    <div class="admins">
+
+                        <span class="free">
+                            Свободно 3 места
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="select-button"
+                    type="button"
+                    data-interval="00:00-02:00"
+                >
+                    Выбрать
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="schedule-footer">
+
+    <button
+        class="reset-button"
+        type="button"
+        id="reset-button"
+    >
+        Сбросить график
+    </button>
+
+    <button
+        class="save-button"
+        type="button"
+    >
+        Сохранить график
+    </button>
+
+</div>
+
+
+    </section>
+
+
+    <!-- Информация -->
+
+    <section class="info-panel">
+
+        <div class="info-icon">
+            !
+        </div>
+
+        <div>
+
+            <strong>
+                Обратите внимание
+            </strong>
+
+            <p>
+                Количество администраторов на каждом временном интервале
+                ограничено. После заполнения лимита выбрать интервал
+                будет невозможно.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <span>
+        Система графика администрации
+    </span>
+
+    <span>
+        Сервер #18
+    </span>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
